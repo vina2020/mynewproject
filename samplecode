@@ -1,4 +1,4 @@
-
+import mysql.connector  
 mysqldb=mysql.connector.connect(host="localhost",user="root",password="",database="test1") 
 mycursor=mysqldb.cursor()
 name=input('enter the name')
