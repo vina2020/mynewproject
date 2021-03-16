@@ -1,2 +1,9 @@
 
 mysqldb=mysql.connector.connect(host="localhost",user="root",password="",database="test1") 
+mycursor=mysqldb.cursor()
+name=input('enter the name')
+age=int(input('enter age'))
+mycursor.execute("insert into employee(name,age) values('{}', {} )".format(name, age))
+mysqldb.commit()
+print ("Record Inserted")  
+
